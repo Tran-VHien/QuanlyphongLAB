@@ -1,0 +1,789 @@
+[
+    {
+        "id": "0a4dee51d523315d",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "flow_dark_theme",
+        "type": "tab",
+        "label": "LAB CONTROL (DARK)",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f5953be11b5d3085",
+        "type": "tab",
+        "label": "LAB CONTROL (DARK)",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "ea390ab60e1e01af",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "dd520c3b66630beb",
+        "type": "mqtt-broker",
+        "name": "HTDD",
+        "broker": "sd2c6b77.ala.asia-southeast1.emqxsl.com",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": true,
+        "protocolVersion": 4,
+        "keepalive": 60,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthRetain": "false",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closeRetain": "false",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willRetain": "false",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "b5f77748490b2f76",
+        "type": "ui_group",
+        "name": "THÔNG TIN SINH VIÊN",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "f35984c4b7a879a8",
+        "type": "ui_group",
+        "name": "BẢNG ĐIỀU KHIỂN",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "0e8c9d4f5d6583b3",
+        "type": "mqtt-broker",
+        "name": "EMQX Hien2004",
+        "broker": "sd2c6b77.ala.asia-southeast1.emqxsl.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "grp_env",
+        "type": "ui_group",
+        "name": "MÔI TRƯỜNG",
+        "tab": "",
+        "order": 1,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "grp_info",
+        "type": "ui_group",
+        "name": "THÔNG TIN ĐIỂM DANH",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "grp_ctrl",
+        "type": "ui_group",
+        "name": "ĐIỀU KHIỂN THIẾT BỊ",
+        "tab": "",
+        "order": 3,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "broker_emqx",
+        "type": "mqtt-broker",
+        "name": "EMQX Hien2004",
+        "broker": "sd2c6b77.ala.asia-southeast1.emqxsl.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": 4,
+        "keepalive": 15,
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "051df26ae72ec7b3",
+        "type": "ui_group",
+        "name": "CÀI ĐẶT TỰ ĐỘNG",
+        "tab": "",
+        "order": 2,
+        "disp": true,
+        "width": "6"
+    },
+    {
+        "id": "broker_emqx_config",
+        "type": "mqtt-broker",
+        "name": "EMQX Hien2004",
+        "broker": "sd2c6b77.ala.asia-southeast1.emqxsl.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false
+    },
+    {
+        "id": "group_setting_temp",
+        "type": "ui_group",
+        "name": "CÀI ĐẶT NHIỆT ĐỘ",
+        "tab": "",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "tab_home_dark",
+        "type": "ui_tab",
+        "name": "QUẢN LÝ PHÒNG LAB (DARK)",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "group_col1",
+        "type": "ui_group",
+        "name": "GIÁM SÁT MÔI TRƯỜNG",
+        "tab": "tab_home_dark",
+        "order": 1,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "group_col2",
+        "type": "ui_group",
+        "name": "THÔNG TIN & CÀI ĐẶT",
+        "tab": "tab_home_dark",
+        "order": 2,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "group_col3",
+        "type": "ui_group",
+        "name": "BẢNG ĐIỀU KHIỂN TRUNG TÂM",
+        "tab": "tab_home_dark",
+        "order": 3,
+        "disp": true,
+        "width": "8",
+        "collapse": false
+    },
+    {
+        "id": "broker_emqx_dark",
+        "type": "mqtt-broker",
+        "name": "EMQX Hien2004 (Dark)",
+        "broker": "sd2c6b77.ala.asia-southeast1.emqxsl.com",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "51462ad68de6ebd2",
+        "type": "ui_gauge",
+        "z": "f5953be11b5d3085",
+        "name": "",
+        "group": "group_col1",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Nhiệt độ Phòng",
+        "label": "°C",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "x": 760,
+        "y": 60,
+        "wires": []
+    },
+    {
+        "id": "507db08e120a6c14",
+        "type": "ui_gauge",
+        "z": "f5953be11b5d3085",
+        "name": "",
+        "group": "group_col1",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "wave",
+        "title": "Độ ẩm Không khí",
+        "label": "%",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "100",
+        "colors": [
+            "#004A00",
+            "#0059b3",
+            "#ca3838"
+        ],
+        "x": 770,
+        "y": 140,
+        "wires": []
+    },
+    {
+        "id": "a263d14deb5f6d6d",
+        "type": "ui_text",
+        "z": "f5953be11b5d3085",
+        "group": "group_col2",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Họ và Tên:",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 730,
+        "y": 200,
+        "wires": []
+    },
+    {
+        "id": "093b03b0664e6807",
+        "type": "ui_text",
+        "z": "f5953be11b5d3085",
+        "group": "group_col2",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Mã Số (ID):",
+        "format": "{{msg.payload}}",
+        "layout": "row-spread",
+        "x": 690,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "260ea34d098164e4",
+        "type": "ui_slider",
+        "z": "f5953be11b5d3085",
+        "name": "",
+        "label": "Cài đặt Ngưỡng Nhiệt (°C):",
+        "tooltip": "",
+        "group": "group_col2",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "khoavatly/caidat",
+        "topicType": "str",
+        "min": "20",
+        "max": "50",
+        "step": 1,
+        "className": "",
+        "x": 230,
+        "y": 340,
+        "wires": [
+            [
+                "01e063103c1f95e8",
+                "3e7e44b520016461"
+            ]
+        ]
+    },
+    {
+        "id": "3e7e44b520016461",
+        "type": "ui_text",
+        "z": "f5953be11b5d3085",
+        "group": "group_col2",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "name": "",
+        "label": "Giá trị đang chọn:",
+        "format": "{{msg.payload}} °C",
+        "layout": "row-right",
+        "x": 630,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "8cf70781dba50e14",
+        "type": "ui_button",
+        "z": "f5953be11b5d3085",
+        "group": "group_col3",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "MỞ CỬA (OPEN)",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "#00bcd4",
+        "icon": "fa-unlock",
+        "payload": "OPEN",
+        "payloadType": "str",
+        "topic": "khoavatly/dieukhien",
+        "topicType": "str",
+        "x": 220,
+        "y": 460,
+        "wires": [
+            [
+                "01e063103c1f95e8"
+            ]
+        ]
+    },
+    {
+        "id": "3701ff266cb05f39",
+        "type": "ui_button",
+        "z": "f5953be11b5d3085",
+        "group": "group_col3",
+        "order": 2,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "BẬT XANH",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "#00bcd4",
+        "icon": "fa-lightbulb-o",
+        "payload": "GREEN_ON",
+        "payloadType": "str",
+        "topic": "khoavatly/dieukhien",
+        "topicType": "str",
+        "x": 210,
+        "y": 520,
+        "wires": [
+            [
+                "01e063103c1f95e8"
+            ]
+        ]
+    },
+    {
+        "id": "aa7402269f055ff3",
+        "type": "ui_button",
+        "z": "f5953be11b5d3085",
+        "group": "group_col3",
+        "order": 3,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "TẮT XANH",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "#333333",
+        "icon": "fa-power-off",
+        "payload": "GREEN_OFF",
+        "payloadType": "str",
+        "topic": "khoavatly/dieukhien",
+        "topicType": "str",
+        "x": 210,
+        "y": 560,
+        "wires": [
+            [
+                "01e063103c1f95e8"
+            ]
+        ]
+    },
+    {
+        "id": "572d2ae8dccf39c0",
+        "type": "ui_button",
+        "z": "f5953be11b5d3085",
+        "group": "group_col3",
+        "order": 4,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "BẬT ĐỎ",
+        "tooltip": "",
+        "color": "black",
+        "bgcolor": "#00bcd4",
+        "icon": "fa-lightbulb-o",
+        "payload": "RED_ON",
+        "payloadType": "str",
+        "topic": "khoavatly/dieukhien",
+        "topicType": "str",
+        "x": 210,
+        "y": 620,
+        "wires": [
+            [
+                "01e063103c1f95e8"
+            ]
+        ]
+    },
+    {
+        "id": "e58077439d1d804a",
+        "type": "ui_button",
+        "z": "f5953be11b5d3085",
+        "group": "group_col3",
+        "order": 5,
+        "width": 4,
+        "height": 1,
+        "passthru": false,
+        "label": "TẮT ĐỎ",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "#333333",
+        "icon": "fa-power-off",
+        "payload": "RED_OFF",
+        "payloadType": "str",
+        "topic": "khoavatly/dieukhien",
+        "topicType": "str",
+        "x": 210,
+        "y": 660,
+        "wires": [
+            [
+                "01e063103c1f95e8"
+            ]
+        ]
+    },
+    {
+        "id": "ab6dd6574b1743dd",
+        "type": "ui_button",
+        "z": "f5953be11b5d3085",
+        "group": "group_col3",
+        "order": 6,
+        "width": 0,
+        "height": 0,
+        "passthru": false,
+        "label": "CÒI BÁO ĐỘNG",
+        "tooltip": "",
+        "color": "white",
+        "bgcolor": "#d32f2f",
+        "icon": "fa-bell",
+        "payload": "ALARM",
+        "payloadType": "str",
+        "topic": "khoavatly/dieukhien",
+        "topicType": "str",
+        "x": 220,
+        "y": 720,
+        "wires": [
+            [
+                "01e063103c1f95e8"
+            ]
+        ]
+    },
+    {
+        "id": "01e063103c1f95e8",
+        "type": "mqtt out",
+        "z": "f5953be11b5d3085",
+        "name": "Gửi Lệnh",
+        "topic": "",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "dd520c3b66630beb",
+        "x": 520,
+        "y": 520,
+        "wires": []
+    },
+    {
+        "id": "caa0e1d6526f63a2",
+        "type": "mqtt in",
+        "z": "f5953be11b5d3085",
+        "name": "Nhận DHT11",
+        "topic": "khoavatly/moitruong",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "dd520c3b66630beb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 150,
+        "y": 100,
+        "wires": [
+            [
+                "a40e70540b226c46"
+            ]
+        ]
+    },
+    {
+        "id": "a40e70540b226c46",
+        "type": "json",
+        "z": "f5953be11b5d3085",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 330,
+        "y": 100,
+        "wires": [
+            [
+                "4ac8eb514e381106",
+                "33fadccb97d6ca6c"
+            ]
+        ]
+    },
+    {
+        "id": "4ac8eb514e381106",
+        "type": "function",
+        "z": "f5953be11b5d3085",
+        "name": "Temp",
+        "func": "msg.payload = msg.payload.temp;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 60,
+        "wires": [
+            [
+                "51462ad68de6ebd2"
+            ]
+        ]
+    },
+    {
+        "id": "33fadccb97d6ca6c",
+        "type": "function",
+        "z": "f5953be11b5d3085",
+        "name": "Hum",
+        "func": "msg.payload = msg.payload.hum;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 490,
+        "y": 140,
+        "wires": [
+            [
+                "507db08e120a6c14"
+            ]
+        ]
+    },
+    {
+        "id": "1a03eae294217870",
+        "type": "mqtt in",
+        "z": "f5953be11b5d3085",
+        "name": "Nhận Điểm Danh",
+        "topic": "khoavatly/diemdanh",
+        "qos": "0",
+        "datatype": "auto",
+        "broker": "dd520c3b66630beb",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 160,
+        "y": 240,
+        "wires": [
+            [
+                "24de65930eb861a9"
+            ]
+        ]
+    },
+    {
+        "id": "24de65930eb861a9",
+        "type": "json",
+        "z": "f5953be11b5d3085",
+        "name": "",
+        "property": "payload",
+        "action": "",
+        "pretty": false,
+        "x": 350,
+        "y": 240,
+        "wires": [
+            [
+                "1912827d2c9678d9",
+                "0ff70c301a09c072"
+            ]
+        ]
+    },
+    {
+        "id": "1912827d2c9678d9",
+        "type": "function",
+        "z": "f5953be11b5d3085",
+        "name": "Lấy Tên",
+        "func": "msg.payload = msg.payload.name;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 540,
+        "y": 200,
+        "wires": [
+            [
+                "a263d14deb5f6d6d"
+            ]
+        ]
+    },
+    {
+        "id": "0ff70c301a09c072",
+        "type": "function",
+        "z": "f5953be11b5d3085",
+        "name": "Lấy ID",
+        "func": "msg.payload = msg.payload.id;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 510,
+        "y": 300,
+        "wires": [
+            [
+                "093b03b0664e6807"
+            ]
+        ]
+    }
+]
