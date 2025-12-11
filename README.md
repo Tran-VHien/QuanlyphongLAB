@@ -125,4 +125,3 @@ Hệ thống đã hoạt động ổn định. Dưới đây là video demo:
 * Phát triển thêm Mobile App (Android/iOS) thay vì dùng Web.
 * Tích hợp Database (MySQL/Firebase) để lưu lịch sử điểm danh lâu dài và xuất báo cáo Excel.
 * Bổ sung thêm nhận diện khuôn mặt (FaceID) bằng ESP32-CAM để tăng tính bảo mật
-# demo
