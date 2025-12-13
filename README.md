@@ -107,7 +107,7 @@ Hệ thống sử dụng vi điều khiển **ESP32** kết nối Wifi, giao ti�
 ![Giao diện Dashboard](./images/bat2den.png)
 
 
-### 🎥 Video Demo Kết quả
+###  Video Demo Kết quả
 Hệ thống đã hoạt động ổn định. Dưới đây là video demo:
 
 [![Demo Video](https://img.youtube.com/vi/5qvPFBEKS2A/0.jpg)](https://www.youtube.com/watch?v=5qvPFBEKS2A)
