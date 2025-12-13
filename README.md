@@ -82,7 +82,7 @@ Hệ thống sử dụng vi điều khiển **ESP32** kết nối Wifi, giao ti�
 | **Servo** | Signal (Cam) | **GPIO 18** | Cấp nguồn 5V |
 | **DHT11** | Data | **GPIO 23** | |
 | **LED Xanh** | (+) | **GPIO 4** | Báo mở cửa |
-| **LED Đỏ** | (+) | **GPIO 5** | Báo nhiệt độ cao (Quạt) |
+| **LED Đỏ** | (+) | **GPIO 5** | Báo nhiệt độ cao |
 | **Buzzer** | (+) | **GPIO 19** | Còi chíp |
 
 **Sơ đồ kết nối**
