@@ -10,12 +10,12 @@
 
 // ================== 1. CẤU HÌNH WIFI & MQTT ==================
 const char* ssid = "Mr.UK";
-const char* password = "66668888";
+const char* password = "********";
 
 const char* mqtt_server = "sd2c6b77.ala.asia-southeast1.emqxsl.com";
 const int mqtt_port = 8883;
 const char* mqtt_user = "Hien2004";
-const char* mqtt_pwd  = "12072004";
+const char* mqtt_pwd  = "********";
 
 // Các Topic MQTT
 const char* topic_gui       = "khoavatly/diemdanh";   // Gửi ID vân tay lên Web
